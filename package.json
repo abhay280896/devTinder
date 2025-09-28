@@ -1,0 +1,16 @@
+{
+  "name": "dev-tender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1"
+  },
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "dev": "node src/app.js"
+  },
+  "author": "abhay",
+  "license": "ISC"
+}
