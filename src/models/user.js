@@ -29,17 +29,14 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        select: false // to hide fileds from the response
+        select: true // to hide fileds from the response
     },
     password: {
         type: String,
         required: true,
-        select: false // to hide fileds from the response
+        select: true // to hide fileds from the response
     }
-},{ timestamps: true })
+},
+{ timestamps: true })
 
 exports.User = model('User', userSchema)
-
-// const User = mongoose.model("User", userSchema);
-
-// module.exports = { User };
